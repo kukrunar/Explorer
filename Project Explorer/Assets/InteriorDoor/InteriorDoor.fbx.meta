@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: ed7ca9d23c2b9f24bba29c1519cc759f
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: InteriorDoor6
+    100004: InteriorDoorFrame
+    100006: InteriorDoorFrame1
+    100008: InteriorDoorFrameRough
+    100010: InteriorDoorFrameRough1
+    100012: InteriorDoorRough
+    100014: polySurface110
+    100016: polySurface111
+    100018: polySurface113
+    100020: polySurface115
+    100022: polySurface116
+    100024: polySurface118
+    100026: polySurface132
+    100028: polySurface137
+    100030: polySurface143
+    100032: polySurface149
+    100034: polySurface150
+    100036: polySurface151
+    100038: polySurface152
+    100040: polySurface52
+    100042: polySurface83
+    100044: transform66
+    100046: transform67
+    100048: transform68
+    100050: transform69
+    100052: transform70
+    100054: transform71
+    100056: transform72
+    100058: transform73
+    100060: transform74
+    100062: transform75
+    100064: transform76
+    100066: transform77
+    100068: transform78
+    100070: transform79
+    400000: //RootNode
+    400002: InteriorDoor6
+    400004: InteriorDoorFrame
+    400006: InteriorDoorFrame1
+    400008: InteriorDoorFrameRough
+    400010: InteriorDoorFrameRough1
+    400012: InteriorDoorRough
+    400014: polySurface110
+    400016: polySurface111
+    400018: polySurface113
+    400020: polySurface115
+    400022: polySurface116
+    400024: polySurface118
+    400026: polySurface132
+    400028: polySurface137
+    400030: polySurface143
+    400032: polySurface149
+    400034: polySurface150
+    400036: polySurface151
+    400038: polySurface152
+    400040: polySurface52
+    400042: polySurface83
+    400044: transform66
+    400046: transform67
+    400048: transform68
+    400050: transform69
+    400052: transform70
+    400054: transform71
+    400056: transform72
+    400058: transform73
+    400060: transform74
+    400062: transform75
+    400064: transform76
+    400066: transform77
+    400068: transform78
+    400070: transform79
+    2300000: InteriorDoor6
+    2300002: InteriorDoorFrame1
+    2300004: InteriorDoorFrameRough1
+    2300006: InteriorDoorRough
+    3300000: InteriorDoor6
+    3300002: InteriorDoorFrame1
+    3300004: InteriorDoorFrameRough1
+    3300006: InteriorDoorRough
+    4300000: InteriorDoorRough
+    4300002: InteriorDoor6
+    4300004: InteriorDoorFrame1
+    4300006: InteriorDoorFrameRough1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    pivotNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
