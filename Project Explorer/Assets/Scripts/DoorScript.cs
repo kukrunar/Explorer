@@ -22,7 +22,7 @@ public class DoorScript : MonoBehaviour {
 		open = false;
 
 		closedValue = Quaternion.Euler(transform.eulerAngles);
-		openValue = Quaternion.Euler(new Vector3 (transform.localEulerAngles.x, transform.localEulerAngles.y + 90, transform.localEulerAngles.z));
+		openValue = Quaternion.Euler(new Vector3 (transform.eulerAngles.x, transform.eulerAngles.y - 90, transform.eulerAngles.z));
 
 
 	}
