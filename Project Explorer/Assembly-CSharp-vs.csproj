@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\DoorScript.cs" />
      <Compile Include="Assets\Scripts\GlobeScript.cs" />
      <Compile Include="Assets\Scripts\KeyboardInputs.cs" />
+     <Compile Include="Assets\Scripts\MouseInputs.cs" />
      <Compile Include="Assets\Scripts\OrbitCycle.cs" />
      <Compile Include="Assets\Scripts\PickupObject.cs" />
      <Compile Include="Assets\Scripts\SunOrbit.cs" />

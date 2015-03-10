@@ -47,14 +47,10 @@ public class KeyboardInputs : MonoBehaviour {
 		}
 		if (Input.GetKeyDown (KeyCode.E)) {
 			ray = new Ray (cam.transform.position, cam.transform.forward);
-			if (Physics.Raycast (ray, out hit, 5, interactable)) {
-				if(hit.collider.gameObject.tag == "PickupAble"){
-					po.pickup(hit.collider.gameObject);
-				}
-				else{
-					IInteractable comp = (IInteractable)hit.collider.gameObject.GetComponent(typeof(IInteractable));
-					comp.interact();
-				}
+			if (Physics.Raycast (ray, out hit, 2, interactable)) {
+
+				IInteractable comp = (IInteractable)hit.collider.gameObject.GetComponent(typeof(IInteractable));
+				comp.interact();
 			}
 		}
 

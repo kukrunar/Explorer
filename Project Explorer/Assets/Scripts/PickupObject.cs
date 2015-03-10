@@ -7,6 +7,8 @@ public class PickupObject : MonoBehaviour {
 	GameObject carriedObject;
 
 	public LayerMask pickupable;
+	public float distance;
+	public float smooth;
 
 	bool carrying;
 
@@ -31,19 +33,22 @@ public class PickupObject : MonoBehaviour {
 	}
 
 	void carry(){
-		carriedObject.transform.position = cam.transform.position + (cam.transform.forward * 1);
+		carriedObject.transform.position = Vector3.Lerp (carriedObject.transform.position, cam.transform.position + cam.transform.forward * distance, Time.deltaTime * smooth);//cam.transform.position + (cam.transform.forward * 1);
 	}
 
 
-	public void pickup(GameObject obj){
+	public void pickup(){
 
 		if (carrying) {
 			dropObject ();
 		} else {
-			carriedObject = obj;
-			carrying = true;
-			carriedObject.GetComponent<Rigidbody> ().useGravity = false;
-			print (carriedObject);
+			ray = new Ray (cam.transform.position, cam.transform.forward);
+			if (Physics.Raycast (ray, out hit, 1.5f, pickupable)) {
+				carriedObject = hit.collider.gameObject;
+				carrying = true;
+				carriedObject.GetComponent<Rigidbody> ().useGravity = false;
+				//print (carriedObject);
+			}
 
 		}
 
@@ -54,7 +59,6 @@ public class PickupObject : MonoBehaviour {
 		carriedObject = null;
 		carrying = false;
 	}
-
 
 
 }
