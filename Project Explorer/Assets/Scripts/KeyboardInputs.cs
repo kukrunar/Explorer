@@ -11,6 +11,13 @@ public class KeyboardInputs : MonoBehaviour {
 	int speed = 1000;
 
 	PickupObject po;
+
+	Ray ray;
+	RaycastHit hit;
+
+	GameObject cam;
+
+	public LayerMask interactable;
 	
 
 
@@ -18,6 +25,7 @@ public class KeyboardInputs : MonoBehaviour {
 	void Start () {
 	
 		po = GetComponent<PickupObject> ();
+		cam = GameObject.Find ("Main Camera");
 
 	}
 	
@@ -38,7 +46,16 @@ public class KeyboardInputs : MonoBehaviour {
 			GetComponent<Rigidbody>().AddForce(transform.right * speed * Time.deltaTime);
 		}
 		if (Input.GetKeyDown (KeyCode.E)) {
-			po.pickup();
+			ray = new Ray (cam.transform.position, cam.transform.forward);
+			if (Physics.Raycast (ray, out hit, 5, interactable)) {
+				if(hit.collider.gameObject.tag == "PickupAble"){
+					po.pickup(hit.collider.gameObject);
+				}
+				else{
+					IInteractable comp = (IInteractable)hit.collider.gameObject.GetComponent(typeof(IInteractable));
+					comp.interact();
+				}
+			}
 		}
 
 	}

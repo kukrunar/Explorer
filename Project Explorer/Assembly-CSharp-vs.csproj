@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Interfaces\IInteractable.cs" />
      <Compile Include="Assets\Scripts\ArmMovement.cs" />
      <Compile Include="Assets\Scripts\CameraRotaiton.cs" />
+     <Compile Include="Assets\Scripts\ChangeItem.cs" />
      <Compile Include="Assets\Scripts\ClockScript.cs" />
      <Compile Include="Assets\Scripts\CompasScript.cs" />
      <Compile Include="Assets\Scripts\DoorScript.cs" />

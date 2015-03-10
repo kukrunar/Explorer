@@ -31,24 +31,20 @@ public class PickupObject : MonoBehaviour {
 	}
 
 	void carry(){
-		carriedObject.transform.position = cam.transform.position + (cam.transform.forward * 2);
+		carriedObject.transform.position = cam.transform.position + (cam.transform.forward * 1);
 	}
 
 
-	public void pickup(){
+	public void pickup(GameObject obj){
 
 		if (carrying) {
 			dropObject ();
 		} else {
+			carriedObject = obj;
+			carrying = true;
+			carriedObject.GetComponent<Rigidbody> ().useGravity = false;
+			print (carriedObject);
 
-			ray = new Ray (cam.transform.position, cam.transform.forward);
-
-			if (Physics.Raycast (ray, out hit, 5,pickupable)) {
-				carriedObject = hit.collider.gameObject;
-				carrying = true;
-				carriedObject.GetComponent<Rigidbody> ().useGravity = false;
-				print (carriedObject);
-			}
 		}
 
 	}

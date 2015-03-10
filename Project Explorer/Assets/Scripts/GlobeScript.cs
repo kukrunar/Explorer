@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GlobeScript : MonoBehaviour {
+public class GlobeScript : MonoBehaviour, IInteractable {
 
 	// Use this for initialization
 	void Start () {
@@ -10,11 +10,10 @@ public class GlobeScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-		if(Input.GetKey(KeyCode.F)){
-			GetComponent<Rigidbody>().AddTorque(Vector3.up * 50 * Time.deltaTime);
-		}
 
+	}
 
+	public void interact(){
+		GetComponent<Rigidbody>().AddTorque(Vector3.up * 200 * Time.deltaTime);
 	}
 }

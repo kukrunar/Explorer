@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorScript : MonoBehaviour {
+public class DoorScript : MonoBehaviour, IInteractable {
 
 
 	Quaternion closedValue;
@@ -37,11 +37,11 @@ public class DoorScript : MonoBehaviour {
 			transform.rotation = Quaternion.RotateTowards (transform.rotation, closedValue, step);
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		/*if (Input.GetKeyDown (KeyCode.Space)) {
 			if(!locked){
 				toggleOpen ();
 			}
-		}
+		}*/
 	}
 
 	void toggleOpen(){
@@ -49,6 +49,10 @@ public class DoorScript : MonoBehaviour {
 	}
 	void toggleLocked(){
 		locked = !locked;
+	}
+
+	public void interact(){
+		toggleOpen ();
 	}
 
 
