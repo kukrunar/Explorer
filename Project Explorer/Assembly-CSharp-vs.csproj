@@ -46,7 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FlashlightScript.cs" />
      <Compile Include="Assets\Interfaces\IInteractable.cs" />
+     <Compile Include="Assets\Interfaces\IUseable.cs" />
      <Compile Include="Assets\Scripts\ArmMovement.cs" />
      <Compile Include="Assets\Scripts\CameraRotaiton.cs" />
      <Compile Include="Assets\Scripts\ChangeItem.cs" />
@@ -60,6 +62,22 @@
      <Compile Include="Assets\Scripts\PickupObject.cs" />
      <Compile Include="Assets\Scripts\SunOrbit.cs" />
      <Compile Include="Assets\Scripts\TimeScript.cs" />
+     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
+     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\LightCone.shader" />
+     <None Include="Assets\ShaderForge\Readme.txt" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\MaterialPlatform.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Vegetation.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexAnimation.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Cubemaps.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Parallax.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\LightWrapping.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\VertexColorRounding.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\TessellationDisplacement.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\Tiles.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\PixelRotator.shader" />
+     <None Include="Assets\ShaderForge\Example Assets\Shaders\CustomLighting.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

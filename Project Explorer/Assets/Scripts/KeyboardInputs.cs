@@ -7,6 +7,7 @@ public class KeyboardInputs : MonoBehaviour {
 	KeyCode backward = KeyCode.S;
 	KeyCode leftward = KeyCode.A;
 	KeyCode rightward = KeyCode.D;
+	KeyCode[] numbers = new KeyCode[10];
 
 	int speed = 1000;
 
@@ -53,6 +54,9 @@ public class KeyboardInputs : MonoBehaviour {
 				comp.interact();
 			}
 		}
+
+
+
 
 	}
 }

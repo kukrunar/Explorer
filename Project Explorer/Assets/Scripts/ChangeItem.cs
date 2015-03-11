@@ -7,12 +7,23 @@ public class ChangeItem : MonoBehaviour {
 
 	int currentItemIndex;
 
+	int numberOfItems = 0;
+
 
 
 	// Use this for initialization
 	void Start () {
 	
 		currentItemIndex = 10;
+
+		foreach (GameObject go in items) {
+			numberOfItems++;		
+		}
+
+		print (numberOfItems);
+
+
+
 	}
 	
 	// Update is called once per frame
@@ -22,6 +33,9 @@ public class ChangeItem : MonoBehaviour {
 		}
 		if (Input.GetKeyDown (KeyCode.Alpha2)) {
 			selectItem(1);	
+		}
+		if (Input.GetKeyDown (KeyCode.Alpha3)) {
+			selectItem(2);	
 		}
 	}
 
@@ -36,6 +50,19 @@ public class ChangeItem : MonoBehaviour {
 			items [index].SetActive (true);
 			currentItemIndex = index;
 		}
+	}
+
+	public GameObject[] getItems(){
+		return items;
+	}
+
+	public GameObject getActiveObject(){
+		foreach (GameObject go in items) {
+			if(go.activeSelf){
+				return go;
+			}
+		}
+		return null;
 	}
 	
 }
