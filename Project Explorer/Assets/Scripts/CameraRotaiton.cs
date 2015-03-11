@@ -16,7 +16,12 @@ public class CameraRotaiton : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		head.transform.Rotate(-Input.GetAxisRaw("Mouse Y") * mouseSensetiveness * Time.deltaTime, 0, 0);
+		if (head.transform.localEulerAngles.y + (-Input.GetAxisRaw ("Mouse Y") * mouseSensetiveness * Time.deltaTime) <= 180) 
+		{
+			head.transform.Rotate (-Input.GetAxisRaw ("Mouse Y") * mouseSensetiveness * Time.deltaTime, 0, 0);
+		}
+
+
 		transform.Rotate (0, Input.GetAxisRaw("Mouse X") * mouseSensetiveness * Time.deltaTime, 0);
 
 	}
