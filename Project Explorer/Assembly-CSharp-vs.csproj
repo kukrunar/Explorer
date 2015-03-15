@@ -65,6 +65,7 @@
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
      <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\LightCone.shader" />
+     <None Include="Assets\Meshes\Window\Materials\GlassMAT.shader" />
      <None Include="Assets\ShaderForge\Readme.txt" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\MaterialPlatform.shader" />
      <None Include="Assets\ShaderForge\Example Assets\Shaders\Vegetation.shader" />

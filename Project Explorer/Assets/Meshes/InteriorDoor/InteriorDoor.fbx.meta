@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: ed7ca9d23c2b9f24bba29c1519cc759f
+guid: 72ad24462bd6bd74b84f806cc0b302a5
+timeCreated: 1426454828
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -97,7 +99,6 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    pivotNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -146,3 +147,4 @@ ModelImporter:
   additionalBone: 0
   userData: 
   assetBundleName: 
+  assetBundleVariant: 

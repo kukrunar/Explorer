@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 7247c39b41591824fb0be1b69ce06a5c
+guid: 7fe55562ddb91b84e97d73ecbeb79162
+timeCreated: 1426454455
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -7,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Flashlight
+    4300000: Test2:polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -18,7 +20,6 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    pivotNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -67,3 +68,4 @@ ModelImporter:
   additionalBone: 0
   userData: 
   assetBundleName: 
+  assetBundleVariant: 

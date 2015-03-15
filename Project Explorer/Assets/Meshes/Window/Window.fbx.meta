@@ -1,20 +1,36 @@
 fileFormatVersion: 2
-guid: 305c2ec151f1f7d41a000dcce4b3693e
+guid: e73d8dd5af5abaf4ba7c6d99bd0860ef
+timeCreated: 1426456165
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Window
-    100004: Window_Rough
-    400000: //RootNode
-    400002: Window
-    400004: Window_Rough
-    2300000: Window
-    2300002: Window_Rough
-    3300000: Window
-    3300002: Window_Rough
-    4300000: Window
-    4300002: Window_Rough
+    100000: Glass
+    100002: Glass_Rough
+    100004: //RootNode
+    100006: Window
+    100008: Window1
+    100010: Window_Rough
+    100012: Window_Rough2
+    400000: Glass
+    400002: Glass_Rough
+    400004: //RootNode
+    400006: Window
+    400008: Window1
+    400010: Window_Rough
+    400012: Window_Rough2
+    2300000: Glass
+    2300002: Glass_Rough
+    2300004: Window1
+    2300006: Window_Rough2
+    3300000: Glass
+    3300002: Glass_Rough
+    3300004: Window1
+    3300006: Window_Rough2
+    4300000: Glass
+    4300002: Glass_Rough
+    4300004: Window1
+    4300006: Window_Rough2
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -25,7 +41,6 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    pivotNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -36,7 +51,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.29999995
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -74,3 +89,4 @@ ModelImporter:
   additionalBone: 0
   userData: 
   assetBundleName: 
+  assetBundleVariant: 
