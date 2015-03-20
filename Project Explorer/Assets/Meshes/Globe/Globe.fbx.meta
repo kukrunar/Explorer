@@ -1,0 +1,98 @@
+fileFormatVersion: 2
+guid: 911a41fbcbf4f7d4cb9cb8e670fcd452
+timeCreated: 1426759343
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Globe_Stand
+    100004: Globe_Top
+    100006: FootStand
+    100008: GlobeBottom
+    100010: GlobeTop
+    100012: TopHolder
+    400000: //RootNode
+    400002: Globe_Stand
+    400004: Globe_Top
+    400006: FootStand
+    400008: GlobeBottom
+    400010: GlobeTop
+    400012: TopHolder
+    2300000: Globe_Stand
+    2300002: Globe_Top
+    2300004: FootStand
+    2300006: GlobeBottom
+    2300008: GlobeTop
+    2300010: TopHolder
+    3300000: Globe_Stand
+    3300002: Globe_Top
+    3300004: FootStand
+    3300006: GlobeBottom
+    3300008: GlobeTop
+    3300010: TopHolder
+    4300000: Globe_Stand
+    4300002: Globe_Top
+    4300004: GlobeBottom
+    4300006: GlobeTop
+    4300008: TopHolder
+    4300010: FootStand
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
