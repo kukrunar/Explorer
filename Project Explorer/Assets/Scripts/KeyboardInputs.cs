@@ -49,7 +49,7 @@ public class KeyboardInputs : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.E)) {
 			ray = new Ray (cam.transform.position, cam.transform.forward);
 			if (Physics.Raycast (ray, out hit, 2, interactable)) {
-				print (hit.collider.gameObject);
+				//print (hit.collider.gameObject);
 
 				IInteractable comp = (IInteractable)hit.collider.gameObject.GetComponent(typeof(IInteractable));
 				comp.interact();
