@@ -25,13 +25,14 @@ Shader "Shader Forge/Examples/LightCone" {
             Blend One One
             ZWrite Off
             
-            Fog {Mode Off}
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
             #define UNITY_PASS_FORWARDBASE
-            #define SHOULD_SAMPLE_SH_PROBE ( defined (LIGHTMAP_OFF) )
+            #define SHOULD_SAMPLE_SH_PROBE ( defined (LIGHTMAP_OFF) && defined(DYNAMICLIGHTMAP_OFF) )
             #include "UnityCG.cginc"
+            #include "UnityPBSLighting.cginc"
+            #include "UnityStandardBRDF.cginc"
             #pragma multi_compile_fwdbase
             #pragma exclude_renderers xbox360 ps3 flash 
             #pragma target 3.0
@@ -51,6 +52,11 @@ Shader "Shader Forge/Examples/LightCone" {
                 float2 uv0 : TEXCOORD0;
                 float4 posWorld : TEXCOORD1;
                 float3 normalDir : TEXCOORD2;
+                #ifndef LIGHTMAP_OFF
+                    float4 uvLM : TEXCOORD3;
+                #else
+                    float3 shLight : TEXCOORD3;
+                #endif
             };
             VertexOutput vert (VertexInput v) {
                 VertexOutput o = (VertexOutput)0;
