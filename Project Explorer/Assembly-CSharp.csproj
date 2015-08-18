@@ -54,7 +54,6 @@
      <Compile Include="Assets\Scripts\ChangeItem.cs" />
      <Compile Include="Assets\Scripts\ClockScript.cs" />
      <Compile Include="Assets\Scripts\CompasScript.cs" />
-     <Compile Include="Assets\Scripts\DemoReelMovement.cs" />
      <Compile Include="Assets\Scripts\DoorScript.cs" />
      <Compile Include="Assets\Scripts\GlobeScript.cs" />
      <Compile Include="Assets\Scripts\KeyboardInputs.cs" />
